@@ -4,7 +4,7 @@ import CandidateIntro from '../CandidateIntro/CandidateIntro';
 function CandidatesList({ candidates }) {
 
 	return (
-			<div>
+			<div> list
 					{ candidates.map(candidate =>
 						<CandidateIntro details={candidate} key={Math.random()+candidate.id}/>
 					)}
