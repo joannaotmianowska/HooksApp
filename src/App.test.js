@@ -1,4 +1,5 @@
 import React from 'react';
+// import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { mount } from 'enzyme';
 import App from './App';
@@ -34,3 +35,10 @@ describe('App component', () => {
     expect(wrapper.find(NotFound)).toHaveLength(1);
   });
 });
+
+
+// test('renders learn react link', () => {
+//   const { getByText } = render(<App />);
+//   const linkElement = getByText(/learn react/i);
+//   expect(linkElement).toBeInTheDocument();
+// });
