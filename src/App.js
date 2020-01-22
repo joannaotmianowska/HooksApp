@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CandidatesList from './components/CandidatesList/CandidatesList';
 import CandidateDetails from './components/CandidateDetails/CandidateDetails';
 import NotFound from './components/NotFound/NotFound';
+import { getCandidates } from './api/server';
 
 function App() {
   const [ candidates, setCandidates ] = useState([]);
@@ -14,7 +15,7 @@ function App() {
 		fetch(`https://randomuser.me/api/?format=json&results=${perPage}&page=${page}`)
 			.then(response => response.json())
 			.then(json => setCandidates(json.results))
-	}, []);
+  }, []);
 
 	return (
 			<Router>

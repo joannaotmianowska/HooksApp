@@ -36,9 +36,9 @@ describe('App component', () => {
   });
 });
 
+// TO DO - mock server & check if data is being fetched as passed down to list comp
 
-// test('renders learn react link', () => {
-//   const { getByText } = render(<App />);
-//   const linkElement = getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+// useEffect(() => {
+//   getCandidates(perPage, page)
+//     .then(response => setCandidates(response.entity.results))
+// }, []);
